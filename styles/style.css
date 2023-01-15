@@ -5,7 +5,8 @@
 }
 header{
     background: rgba(255, 144, 14, 0.1);
-    width: 100%;
+    width: 0 auto;
+    
     
 }
 nav{
@@ -20,6 +21,12 @@ nav> ul{
     justify-content: space-between;
     list-style: none;
     gap: 30px;
+}
+.description-primary{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 15px;
 }
 .text{
     width: 862px;
@@ -45,7 +52,10 @@ button{
     color: #FFFFFF;
 }
 .banner{
-    margin-left:200px;
+    /* margin-left:200px;
+    margin-top: 50px; */
+    /* margin: 0 auto; */
+    padding: 50px 200px;
 }
 .banner> img{
     width: 1140px;
@@ -113,6 +123,7 @@ button{
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    
 }
 .btn-secondary{
     width: 230px;
@@ -146,9 +157,12 @@ button{
     border-radius: 8px;
     padding: 25px 50px;
     
+    transition: transform, 2s;
+    
 }
 .icon:hover{
     transform: rotate(15deg);
+
 }
 /* sponsors */
 .Sponspors{
@@ -207,11 +221,16 @@ footer{
         
     }
     .banner{
-        margin-left: 120px;
+        /* margin-left: 120px; */
+        padding: 50px 100px;
     }
     .feature-images{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-images img{
+        width: 1000px;
+        margin-left: 600px;
     }
     
     .container{
@@ -222,7 +241,7 @@ footer{
         flex-direction: column;
         gap: 30px;
     }
-    .cotainer-feature{
+    .container-feature{
         
         gap: 25px;
     }
