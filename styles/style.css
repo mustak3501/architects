@@ -27,13 +27,8 @@ nav> ul{
     margin-left: 300px;
     margin-right: 50px;
     margin-top: 75px;
-    /* margin: 5px 250px; */
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 4.5rem 0; */
+   
 }
 button{
     width: 180px;
@@ -141,8 +136,11 @@ border-radius: 8px;
    height: 220.83px;
     border: 1px solid #FF900E;
     border-radius: 8px;
-    /* transform: rotate(90deg) */
     padding: 25px 50px;
+    
+}
+.icon:hover{
+    transform: rotate(15deg);
 }
 /* sponsors */
 .Sponspors{
@@ -156,7 +154,16 @@ border-radius: 8px;
     margin-left: 50px;
 }
   
-/* media partner */
+/* inspire */
+.inspire{
+    display: flex;
+    align-items: center;
+    margin: 50px 100px;
+}
+#furniture> img{
+    height:500px;
+    width: 500px;
+}
 
 /* footer */
 footer{
@@ -172,6 +179,9 @@ footer{
 }
 .text-footer{
     text-align: center;
+    color: #131313;
+    font-size: 20px;
+    font-weight: 500;
     
 }
 /* media query */
@@ -188,10 +198,14 @@ footer{
        flex-direction: column; 
         
     }
+    .banner{
+        margin-left: 120px;
+    }
     .feature-images{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
+    
     .container{
         flex-direction: column;
         margin-left: 300px;
@@ -226,6 +240,14 @@ footer{
         margin-top: 80px;
         margin-left: 400px;
         gap: 50px;
+    }
+    .inspire{
+        margin-left: 200px;
+        gap: 50px;
+    }
+    #furniture> img{
+        height:700px;
+        width: 700px;
     }
     footer{
         width: 1200px;
